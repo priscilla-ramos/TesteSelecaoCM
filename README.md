@@ -14,8 +14,8 @@ Para executar o projeto de testes automatizados é necessário seguir alguns pas
 
 •	Instalar o ChromeDriver: https://chromedriver.chromium.org/downloads
 
-          o Verifique a versão do seu navegador Chrome e instale o ChromeDriver correspondente.
-          o Configurar a variável de ambiente PATH, apontando para o caminho de extração do zip. Ex: C:\DriverSelenium\ChromeDriver\
+      o Verifique a versão do seu navegador Chrome e instale o ChromeDriver correspondente.
+      o Configurar a variável de ambiente PATH, apontando para o caminho de extração do zip. Ex: C:\DriverSelenium\ChromeDriver\
 	  
 •	Dentro do diretório raiz do projeto executar: mvn test
 
