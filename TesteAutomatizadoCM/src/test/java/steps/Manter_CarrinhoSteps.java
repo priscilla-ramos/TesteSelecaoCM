@@ -19,7 +19,7 @@ public class Manter_CarrinhoSteps {
 	@Dado("^que o usuario escolha um produto na pagina principal$")
 	public void que_o_usuario_escolha_um_produto_na_pagina_principal() throws Throwable {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--start-maximized");
+		options.addArguments("--headless");
 		
 		driver = new ChromeDriver(options);
 		driver.get(url);
