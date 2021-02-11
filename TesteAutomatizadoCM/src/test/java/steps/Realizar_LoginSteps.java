@@ -22,7 +22,7 @@ public class Realizar_LoginSteps {
 	@Dado("^que o usuario queira fazer sign in na aplicacao$")
 	public void que_o_usuario_queira_fazer_sign_in_na_aplicacao() throws Throwable {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--start-maximized");
+		options.addArguments("--headless");
 		
 		driver = new ChromeDriver(options);
 		driver.get(url);
@@ -72,11 +72,11 @@ public class Realizar_LoginSteps {
 		
 		textbox_primeironome.sendKeys("Casa");		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		textbox_ultimonome.sendKeys("Magalh„es");
+		textbox_ultimonome.sendKeys("Magalh√£es");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		textbox_senha.sendKeys("12345");		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		textbox_endereco.sendKeys("Rua Magalh„es, 115");
+		textbox_endereco.sendKeys("Rua Magalh√£es, 115");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		textbox_cidade.sendKeys("Fortaleza");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -93,7 +93,7 @@ public class Realizar_LoginSteps {
 	@Entao("^o sistema faz o login automatico e exibe a pagina my account$")
 	public void o_sistema_faz_o_login_automatico_e_exibe_a_pagina_my_account() throws Throwable {
 		String result_atual = driver.findElement(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a/span")).getText().replaceAll("\\n", "").replaceAll("\\r", "");
-		String result_esperado = "Casa Magalh„es";	
+		String result_esperado = "Casa Magalh√£es";	
 				
 		assertEquals(result_esperado, result_atual);
 		
