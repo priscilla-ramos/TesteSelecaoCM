@@ -9,7 +9,8 @@ Para executar o projeto de testes automatizados é necessário seguir alguns pas
 	  
 •	Instalar o MAVEN:  https://maven.apache.org/download.cgi
 
-	  o Configurar a variável de ambiente PATH, apontando para o caminho de instalação do Maven. Ex: C:\Java\Maven\apache-maven-3.2.5\bin
+	  o Configurar a variável de ambiente PATH, apontando para o caminho de instalação do Maven. 
+	    Ex: C:\Java\Maven\apache-maven-3.2.5\bin
 •	Instalar o Chrome: https://www.google.com/intl/pt-BR/chrome/
 
 •	Instalar o ChromeDriver: https://chromedriver.chromium.org/downloads
