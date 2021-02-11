@@ -21,7 +21,7 @@ public class Pesquisar_ProdutoSteps {
 	public void que_o_usuario_digite_a_palavra_para_pesquisar_um_produto(String arg1) throws Throwable {
 		
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--start-maximized");
+		options.addArguments("--headless");
 		
 		driver = new ChromeDriver(options);
 		driver.get(url);	
