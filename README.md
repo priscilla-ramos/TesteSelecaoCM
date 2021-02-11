@@ -20,6 +20,8 @@ Para executar o projeto de testes automatizados é necessário seguir alguns pas
         Ex: C:\DriverSelenium\ChromeDriver\
 	  
 •	Dentro do diretório raiz do projeto executar: mvn test
+	
+	Ex: cd c:\TesteAutomatizadoSelenium\TesteAutomatizadoCM
 
 
 
